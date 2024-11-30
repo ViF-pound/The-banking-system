@@ -16,7 +16,6 @@ class User(Base):
     email:Mapped[str]
     number:Mapped[str]
     password:Mapped[str]
-    authorize:Mapped[str] = "not authorize"
 
 Base.metadata.create_all(engine)
 
